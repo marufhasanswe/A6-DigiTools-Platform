@@ -5,7 +5,7 @@ const Card = ({ cards, cart, setCart }) => {
     setCart([...cart, card]);
   };
   return (
-    <div className="grid md:grid-cols-3 gap-7 container mx-auto mt-10">
+    <div className="grid md:grid-cols-3 gap-7">
       {cards.map((card) => (
         <div key={card.id} className="card w-full bg-base-100 shadow-sm ">
           <div className="card-body relative shadow space-y-2">

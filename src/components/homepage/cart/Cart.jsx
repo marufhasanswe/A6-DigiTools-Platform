@@ -17,7 +17,7 @@ const Cart = ({ cart, setCart }) => {
                 <img className="w-15 h-15" src={cartItem.icon} alt="" />
               </div>
               <div>
-                <h3 className="text-[20px] font-semibold text-[#101727FF;]">
+                <h3 className="text-lg md:text-[20px] font-semibold text-[#101727FF;]">
                   {cartItem.name}
                 </h3>
                 <p className="text-[16px] font-semibold text-[#627382FF]">

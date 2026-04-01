@@ -1,7 +1,6 @@
 import React from "react";
 import shoopingCart from "../../assets/products/shopping-cart.png";
 const NavBar = ({ cart }) => {
-  console.log(cart);
   return (
     <div className="navbar bg-base-100 shadow-sm container mx-auto">
       <div className="navbar-start">

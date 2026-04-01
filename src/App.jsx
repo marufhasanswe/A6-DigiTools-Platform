@@ -5,6 +5,7 @@ import DigitalTools from "./components/homepage/digitalTools/DigitalTools";
 import Stats from "./components/homepage/stats/Stats";
 import NavBar from "./components/navBar/NavBar";
 import SectionHeading from "./components/ui/SectionHeading";
+import Steps from "./components/homepage/steps/Steps";
 
 const fetchData = async () => {
   const res = await fetch("./data.json");
@@ -20,7 +21,9 @@ function App() {
       <Banner />
       <Stats />
       <Suspense
-        fallback={<span className="loading loading-spinner loading-md "></span>}
+        fallback={
+          <span className="loading loading-spinner loading-md text-center"></span>
+        }
       >
         <DigitalTools
           dataPromises={dataPromises}
@@ -28,6 +31,7 @@ function App() {
           setCart={setCart}
         />
       </Suspense>
+      <Steps />
     </>
   );
 }

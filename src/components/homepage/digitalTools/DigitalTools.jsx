@@ -7,9 +7,16 @@ import Cart from "../cart/Cart";
 const DigitalTools = ({ dataPromises, cart, setCart }) => {
   const cards = use(dataPromises);
   const [togglingStatus, setTogglingStatus] = useState("products");
+  const sectionHeading = `Premium Digital Tools`;
+  const sectionDesc = `Choose from our curated collection of premium digital products designed
+to boost your productivity and creativity.`;
+
   return (
     <div className="container mx-auto p-4">
-      <SectionHeading />
+      <SectionHeading
+        sectionHeading={sectionHeading}
+        sectionDesc={sectionDesc}
+      />
       <TogglingButtons
         togglingStatus={togglingStatus}
         setTogglingStatus={setTogglingStatus}
