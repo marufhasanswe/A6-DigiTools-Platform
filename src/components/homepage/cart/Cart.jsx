@@ -1,12 +1,20 @@
 import React from "react";
 import cartImg from "../../../assets/products/shopping-cart.png";
+import { toast } from "react-toastify";
 
 const Cart = ({ cart, setCart }) => {
   const totalCartPrice = cart.reduce((sum, item) => sum + item.price, 0);
+
   const handleRemoveBtn = (cartItem) => {
     const newCart = cart.filter((product) => product.id != cartItem.id);
     setCart(newCart);
+    toast.error("Successfully removed this item!");
   };
+  const handleProceedBtn = () => {
+    setCart([]);
+    toast.success("Successfully removed all items in cart!");
+  };
+
   return (
     <div className="space-y-4 p-10 mt-10 border border-base-300 rounded-2xl mb-32">
       <h4 className="text-2xl font-semibold">Your Cart</h4>
@@ -50,7 +58,7 @@ const Cart = ({ cart, setCart }) => {
           </div>
           <button
             className="btn btn-primary py-5 w-full rounded-full"
-            onClick={() => setCart([])}
+            onClick={() => handleProceedBtn()}
           >
             Proceed to Checkout
           </button>
