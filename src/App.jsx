@@ -7,6 +7,7 @@ import NavBar from "./components/navBar/NavBar";
 import SectionHeading from "./components/ui/SectionHeading";
 import Steps from "./components/homepage/steps/Steps";
 import Pricing from "./components/homepage/pricing/Pricing";
+import Footer from "./components/footer/Footer";
 
 const fetchData = async () => {
   const res = await fetch("./data.json");
@@ -34,6 +35,7 @@ function App() {
       </Suspense>
       <Steps />
       <Pricing />
+      <Footer />
     </>
   );
 }
