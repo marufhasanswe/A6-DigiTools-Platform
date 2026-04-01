@@ -1,6 +1,9 @@
 import React from "react";
 
-const Card = ({ cards }) => {
+const Card = ({ cards, cart, setCart }) => {
+  const handleBuyNow = (card) => {
+    setCart([...cart, card]);
+  };
   return (
     <div className="grid md:grid-cols-3 gap-7 container mx-auto mt-10">
       {cards.map((card) => (
@@ -27,8 +30,8 @@ const Card = ({ cards }) => {
               </span>
             </h3>
             <ul className=" flex flex-col gap-2 text-xs">
-              {card.features.map((feature) => (
-                <li>
+              {card.features.map((feature, i) => (
+                <li key={i}>
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     className="size-4 me-2 inline-block text-success"
@@ -48,7 +51,10 @@ const Card = ({ cards }) => {
               ))}
             </ul>
             <div className="mt-6">
-              <button className="btn btn-primary btn-block rounded-full">
+              <button
+                className="btn btn-primary btn-block rounded-full"
+                onClick={() => handleBuyNow(card)}
+              >
                 Buy Now
               </button>
             </div>

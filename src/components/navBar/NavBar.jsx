@@ -1,6 +1,7 @@
 import React from "react";
 import shoopingCart from "../../assets/products/shopping-cart.png";
-const NavBar = () => {
+const NavBar = ({ cart }) => {
+  console.log(cart);
   return (
     <div className="navbar bg-base-100 shadow-sm container mx-auto">
       <div className="navbar-start">
@@ -65,7 +66,12 @@ const NavBar = () => {
         </ul>
       </div>
       <div className="navbar-end ">
-        <button>
+        <button className="relative">
+          {cart.length > 0 && (
+            <span className="text-xs bg-red-500 text-white w-4 h-4 inline-block rounded-full font-semibold absolute -top-3 -right-2">
+              {cart.length}
+            </span>
+          )}
           <img src={shoopingCart} alt="" />
         </button>
         <button className="btn btn-ghost">Login</button>

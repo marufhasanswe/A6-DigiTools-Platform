@@ -1,4 +1,4 @@
-import { Suspense } from "react";
+import { Suspense, useState } from "react";
 import "./App.css";
 import Banner from "./components/homepage/banner/Banner";
 import DigitalTools from "./components/homepage/digitalTools/DigitalTools";
@@ -13,16 +13,20 @@ const fetchData = async () => {
 
 function App() {
   const dataPromises = fetchData();
+  const [cart, setCart] = useState([]);
   return (
     <>
-      <NavBar />
+      <NavBar cart={cart} />
       <Banner />
       <Stats />
-      <SectionHeading />
       <Suspense
         fallback={<span className="loading loading-spinner loading-md "></span>}
       >
-        <DigitalTools dataPromises={dataPromises} />
+        <DigitalTools
+          dataPromises={dataPromises}
+          cart={cart}
+          setCart={setCart}
+        />
       </Suspense>
     </>
   );
