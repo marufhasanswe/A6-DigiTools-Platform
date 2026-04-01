@@ -4,7 +4,7 @@ const Stats = () => {
   return (
     <div className="primary-bg">
       <div
-        className="container mx-auto py-15 flex w-full justify-around items-center
+        className="container mx-auto py-15 flex flex-col md:flex-row w-full gap-8 justify-around items-center
     "
       >
         <div className="text-white">

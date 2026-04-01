@@ -8,7 +8,7 @@ const DigitalTools = ({ dataPromises, cart, setCart }) => {
   const cards = use(dataPromises);
   const [togglingStatus, setTogglingStatus] = useState("products");
   return (
-    <div className="container mx-auto">
+    <div className="container mx-auto p-4">
       <SectionHeading />
       <TogglingButtons
         togglingStatus={togglingStatus}
