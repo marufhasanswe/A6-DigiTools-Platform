@@ -9,7 +9,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["100+ templates", "ATS optimization", "Export to PDF"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
+    "icon": "https://i.ibb.co.com/Tq0336gc/design-tool.png"
   },
   {
     "id": 2,
@@ -20,7 +20,7 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["Responsive design", "SEO optimized", "Easy customization"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
+    "icon": "https://i.ibb.co.com/Dfy2gV9v/operation.png"
   },
   {
     "id": 3,
@@ -31,7 +31,7 @@
     "tag": "new",
     "tagType": "new",
     "features": ["Application tracking", "Interview reminders", "Status updates"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
+    "icon": "https://i.ibb.co.com/sJsrsXxC/portfolio.png"
   },
   {
     "id": 4,
@@ -42,7 +42,7 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["AI-generated content", "Multiple templates", "Instant download"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
+    "icon": "https://i.ibb.co.com/v69XjyVW/social-media.png"
   },
   {
     "id": 5,
@@ -53,7 +53,7 @@
     "tag": "best seller",
     "tagType": "best",
     "features": ["Profile analysis", "Keyword suggestions", "Performance insights"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
+    "icon": "https://i.ibb.co.com/fY4LCjVX/writing-2327400-1.png"
   },
   {
     "id": 6,
@@ -64,28 +64,6 @@
     "tag": "popular",
     "tagType": "popular",
     "features": ["Mock interviews", "Expert tips", "Answer guidelines"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
-  },
-  {
-    "id": 7,
-    "name": "Freelancer Starter Pack",
-    "description": "Everything you need to start freelancing and land your first clients.",
-    "price": 24.99,
-    "period": "one-time",
-    "tag": "new",
-    "tagType": "new",
-    "features": ["Proposal templates", "Client scripts", "Pricing guide"],
-    "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
-  },
-  {
-    "id": 8,
-    "name": "Skill Certification Bundle",
-    "description": "Access curated courses and earn certifications in trending skills.",
-    "price": 49.99,
-    "period": "yearly",
-    "tag": "best seller",
-    "tagType": "best",
-    "features": ["Online courses", "Certificates", "Lifetime access"],
     "icon": "https://cdn-icons-png.freepik.com/512/104/104647.png"
   }
 ]

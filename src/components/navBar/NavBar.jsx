@@ -2,7 +2,7 @@ import React from "react";
 import shoopingCart from "../../assets/products/shopping-cart.png";
 const NavBar = ({ cart }) => {
   return (
-    <div className="navbar bg-base-100 shadow-sm container mx-auto">
+    <div className="navbar bg-base-100 shadow-sm container mx-auto sticky top-0 z-30">
       <div className="navbar-start">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -64,7 +64,7 @@ const NavBar = ({ cart }) => {
           </li>
         </ul>
       </div>
-      <div className="navbar-end ">
+      <div className="navbar-end space-x-">
         <button className="relative">
           {cart.length > 0 && (
             <span className="text-xs bg-red-500 text-white w-4 h-4 inline-block rounded-full font-semibold absolute -top-3 -right-2">
@@ -74,7 +74,7 @@ const NavBar = ({ cart }) => {
           <img src={shoopingCart} alt="" />
         </button>
         <button className="btn btn-ghost">Login</button>
-        <a className="btn rounded-full primary-bg text-white">Get Started</a>
+        <a className="btn  rounded-full primary-bg text-white">Get Started</a>
       </div>
     </div>
   );

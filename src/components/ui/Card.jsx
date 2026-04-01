@@ -1,8 +1,10 @@
 import React from "react";
+import { toast } from "react-toastify";
 
 const Card = ({ cards, cart, setCart }) => {
   const handleBuyNow = (card) => {
     setCart([...cart, card]);
+    toast.success("Successfully added to cart!");
   };
   return (
     <div className="grid md:grid-cols-3 gap-7">
@@ -52,6 +54,7 @@ const Card = ({ cards, cart, setCart }) => {
             </ul>
             <div className="mt-6">
               <button
+                type="button"
                 className="btn btn-primary btn-block rounded-full"
                 onClick={() => handleBuyNow(card)}
               >
